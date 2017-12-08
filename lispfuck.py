@@ -2,9 +2,9 @@ from sys import argv
 import pprint
 import ox
 
-file_name, lf_source, file_out = argv
+file_name, file_in, file_out = argv
 
-in_file = open(lf_source)
+in_file = open(file_in)
 code = in_file.read()
 
 lexer = ox.make_lexer([
